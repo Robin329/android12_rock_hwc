@@ -1,0 +1,16 @@
+package rockchip.hardware.hdmi@1.0;
+
+import IHdmiCallback;
+
+interface IHdmi
+{
+	foundHdmiDevice(string deviceId);
+
+	getHdmiDeviceId() generates (string deviceId);
+
+	onStatusChange(uint32_t status);
+
+	registerListener(IHdmiCallback cb);
+
+	unregisterListener(IHdmiCallback cb);
+};

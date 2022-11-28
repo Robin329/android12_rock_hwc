@@ -1,0 +1,10 @@
+package rockchip.hardware.hdmi@1.0;
+
+
+
+struct HdmiStatus {
+
+uint64_t status;
+
+
+};
